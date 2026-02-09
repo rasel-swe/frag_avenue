@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frag Avenue | Luxury Niche Fragrances</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+      :root {
+        --charcoal: #1a1a1a;
+        --gold: #c5a059;
+        --ivory: #fdfbf7;
+      }
+      body {
+        font-family: 'Montserrat', sans-serif;
+        background-color: var(--ivory);
+        color: var(--charcoal);
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        overflow-x: hidden;
+      }
+      .font-serif {
+        font-family: 'Playfair Display', serif;
+      }
+      /* Smooth scrolling for the whole page */
+      html {
+        scroll-behavior: smooth;
+      }
+      /* Custom luxury scrollbar */
+      ::-webkit-scrollbar {
+        width: 4px;
+      }
+      ::-webkit-scrollbar-track {
+        background: var(--ivory);
+      }
+      ::-webkit-scrollbar-thumb {
+        background: rgba(197, 160, 89, 0.3);
+        border-radius: 0;
+        transition: background 0.3s;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: var(--gold);
+      }
+      /* Shimmer effect for skeletons */
+      @keyframes shimmer {
+        0% { background-position: -200% 0; }
+        100% { background-position: 200% 0; }
+      }
+      .skeleton {
+        background: linear-gradient(90deg, #f0f0f0 25%, #e8e8e8 50%, #f0f0f0 75%);
+        background-size: 200% 100%;
+        animation: shimmer 2s infinite linear;
+      }
+      /* Global text tracking refinement */
+      .tracking-luxury {
+        letter-spacing: 0.3em;
+      }
+      .tracking-editorial {
+        letter-spacing: 0.5em;
+      }
+      /* Text shadow for hero readability - enhanced for better contrast */
+      .text-shadow-luxury {
+        text-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+      }
+      /* Custom focus styles */
+      :focus-visible {
+        outline: 1px solid var(--gold);
+        outline-offset: 2px;
+      }
+    </style>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              charcoal: '#1a1a1a',
+              gold: {
+                DEFAULT: '#c5a059',
+                light: '#e1cc9e',
+                dark: '#a68443'
+              },
+              beige: '#f5f5dc',
+              ivory: '#fdfbf7',
+            },
+            letterSpacing: {
+              'widest-luxury': '0.4em',
+              'editorial': '0.6em',
+            }
+          }
+        }
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.4",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.563.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
