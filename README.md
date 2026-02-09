@@ -6,6 +6,7 @@ It delivers a refined shopping experience through **elegant UI, smooth animation
 Built with a **component-based approach**, Frag Avenue emphasizes **premium design, accessibility, and scalability**.
 
 ---
+#Live link:: https://6989b343ed27c4617bd65014--animated-naiad-cfed2e.netlify.app/
 
 ## ✨ Features
 
